@@ -11,8 +11,8 @@ type Props = {
 
 const SidebarLink = ({ category, subCat }: Props) => {
   return (
-    <div className="mb-8">
-      <span className="text-sm text-gray-400">{category}</span>
+    <div className="">
+      <span className="text-sm text-gray-400 hidden md:inline">{category}</span>
       <ul className="flex flex-col justify-center gap-4 mt-2.5">
         <div className="relative">
           {subCat.map((item) => (
@@ -25,6 +25,8 @@ const SidebarLink = ({ category, subCat }: Props) => {
           ))}
         </div>
       </ul>
+
+      <div className="divider h-px w-full bg-neutral-300/50 mt-4 md:hidden block" />
     </div>
   );
 };

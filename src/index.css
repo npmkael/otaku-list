@@ -7,4 +7,6 @@ body {
 @theme {
   --font-inter: "Inter", sans-seirf;
   --font-poppins: "Poppins", sans-serif;
+
+  --color-primary: #876c57;
 }
