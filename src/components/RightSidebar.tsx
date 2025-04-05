@@ -4,7 +4,7 @@ import FavoriteAnime from "../Animes/FavoriteAnime";
 
 const RightSidebar = () => {
   return (
-    <div className="sidebar w-full h-full md:max-w-[300px] max-w-[90px] border-l border-l-gray-400/30 bg-[#F9FAFE] relative font-inter overflow-y-auto">
+    <div className="sidebar w-full h-full hidden md:block max-w-[300px] border-l border-l-gray-400/30 bg-[#F9FAFE] relative font-inter">
       <div className="md:px-10 px-4 py-6 flex flex-col justify-center items-center gap-7">
         {/* Popular Animes */}
         <div className="popular-animes w-full">

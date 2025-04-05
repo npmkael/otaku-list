@@ -17,7 +17,9 @@ const PopularAnime = ({ title, genres, poster, rating }: Props) => {
       />
       <div className="flex flex-col justify-between">
         <div className="leading-4">
-          <h3 className="text-sm font-semibold">{title}</h3>
+          <h3 className="text-sm font-semibold">
+            {title.length > 15 ? title.slice(0, 15) + "..." : title}
+          </h3>
           <span className="text-xs text-gray-400">
             {genres.map((genre) => genre).join(", ")}
           </span>
