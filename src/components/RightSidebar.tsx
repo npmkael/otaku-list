@@ -1,6 +1,6 @@
 import { favoriteAnime, popularAnime } from "../constants/fake-anime-api";
-import PopularAnime from "../Animes/PopularAnime";
-import FavoriteAnime from "../Animes/FavoriteAnime";
+import PopularAnime from "./Animes/PopularAnime";
+import FavoriteAnime from "./Animes/FavoriteAnime";
 
 const RightSidebar = () => {
   return (
