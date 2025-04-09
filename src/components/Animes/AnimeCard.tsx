@@ -19,9 +19,9 @@ const AnimeCard = ({ anime }: AnimeCardProps) => {
       <a href="#">
         <div className="aspect-[2/3] relative overflow-hidden">
           <img
-            src="/kobayashi-dragon-maid-poster.jpg"
+            src={`${anime.backdropUrl}`}
             alt=""
-            className="object-cover h-full transition-transform duration-300 group-hover:scale-105"
+            className="object-cover h-full w-full transition-transform duration-300 group-hover:scale-105"
           />
 
           {/* Gradient Overlay */}

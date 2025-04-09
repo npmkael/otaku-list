@@ -16,7 +16,7 @@ const animes: Anime[] = [
     season: "Fall 2024",
     voiceActors: ["Yuki Kaji", "Yui Ishikawa", "Marina Inoue"],
     posterUrl: "/solo-leveling-banner-sample.webp",
-    backdropUrl: "../../../public/solo-leveling-banner-sample.webp",
+    backdropUrl: "/solo-leveling-poster.jpg",
   },
   {
     id: "2",
@@ -32,7 +32,7 @@ const animes: Anime[] = [
     season: "Spring 2019",
     voiceActors: ["Natsuki Hanae", "Akari Kitō", "Hiro Shimono"],
     posterUrl: "/apothecary-poster-banner.jpg",
-    backdropUrl: "/apothecary-poster-banner.jpg",
+    backdropUrl: "/apothecary-poster.webp",
   },
   {
     id: "3",
@@ -64,7 +64,7 @@ const animes: Anime[] = [
     season: "Fall 2020",
     voiceActors: ["Junya Enoki", "Yuma Uchida", "Asami Seto"],
     posterUrl: "/jujutsu-kaisen-banner.jpg",
-    backdropUrl: "/jujutsu-kaisen-banner.jpg",
+    backdropUrl: "/jjk-poster.webp",
   },
   {
     id: "5",
@@ -79,8 +79,8 @@ const animes: Anime[] = [
     studio: "Toei Animation",
     season: "Fall 1999",
     voiceActors: ["Mayumi Tanaka", "Kazuya Nakai", "Akemi Okamura"],
-    posterUrl: "/one-piece-banner-poster.avif",
-    backdropUrl: "/one-piece-banner-poster.avif",
+    posterUrl: "/one-piece-banner-poster.webp",
+    backdropUrl: "/one-piece-poster.jpg",
   },
   {
     id: "6",
@@ -95,8 +95,8 @@ const animes: Anime[] = [
     studio: "Bones",
     season: "Spring 2009",
     voiceActors: ["Romi Park", "Rie Kugimiya", "Shinichiro Miki"],
-    posterUrl: "/placeholder.svg?height=450&width=300&text=FMA Brotherhood",
-    backdropUrl: "/placeholder.svg?height=1080&width=1920&text=FMA Brotherhood",
+    posterUrl: "/fullmetal-alchemist.jpg",
+    backdropUrl: "/fullmetal-alchemist.jpg",
   },
   {
     id: "7",
@@ -112,7 +112,7 @@ const animes: Anime[] = [
     season: "Spring 2022",
     voiceActors: ["Takuya Eguchi", "Atsumi Tanezaki", "Saori Hayami"],
     posterUrl: "/placeholder.svg?height=450&width=300&text=Spy x Family",
-    backdropUrl: "/placeholder.svg?height=1080&width=1920&text=Spy x Family",
+    backdropUrl: "/spyfamily-poster.jpg",
   },
   {
     id: "8",
@@ -126,9 +126,8 @@ const animes: Anime[] = [
       "Denji has a simple dream—to live a happy and peaceful life, spending time with a girl he likes. This is a far cry from reality, however, as Denji is forced by the yakuza into killing devils in order to pay off his crushing debts.",
     studio: "MAPPA",
     season: "Fall 2022",
-    voiceActors: ["Kikunosuke Toya", "Tomori Kusunoki", "Ai Fairouz"],
-    posterUrl: "/placeholder.svg?height=450&width=300&text=Chainsaw Man",
-    backdropUrl: "/placeholder.svg?height=1080&width=1920&text=Chainsaw Man",
+    voiceActors: ["/chainsawman.jpg"],
+    backdropUrl: "/chainsawman.jpg",
   },
   {
     id: "9",
@@ -144,7 +143,7 @@ const animes: Anime[] = [
     season: "Fall 2006",
     voiceActors: ["Mamoru Miyano", "Kappei Yamaguchi", "Shido Nakamura"],
     posterUrl: "/placeholder.svg?height=450&width=300&text=Death Note",
-    backdropUrl: "/placeholder.svg?height=1080&width=1920&text=Death Note",
+    backdropUrl: "/death-note.jpg",
   },
   {
     id: "10",
@@ -160,22 +159,9 @@ const animes: Anime[] = [
     season: "Winter 2018",
     voiceActors: ["Yui Ishikawa", "Daisuke Namikawa", "Takehito Koyasu"],
     posterUrl: "/placeholder.svg?height=450&width=300&text=Violet Evergarden",
-    backdropUrl:
-      "/placeholder.svg?height=1080&width=1920&text=Violet Evergarden",
+    backdropUrl: "/violet-evergarden.jpg",
   },
 ];
-
-// Update the first 5 animes with more specific backdrop URLs
-animes[0].backdropUrl =
-  "/placeholder.svg?height=1080&width=1920&text=Attack on Titan";
-animes[1].backdropUrl =
-  "/placeholder.svg?height=1080&width=1920&text=Demon Slayer";
-animes[2].backdropUrl =
-  "/placeholder.svg?height=1080&width=1920&text=My Hero Academia";
-animes[3].backdropUrl =
-  "/placeholder.svg?height=1080&width=1920&text=Jujutsu Kaisen";
-animes[4].backdropUrl =
-  "/placeholder.svg?height=1080&width=1920&text=FMA Brotherhood";
 
 // Export anime lists
 export const featuredAnimes = animes.slice(0, 5);
