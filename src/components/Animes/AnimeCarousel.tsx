@@ -71,7 +71,7 @@ const AnimeCarousel = ({ animes }: AnimeCarouselProps) => {
         {animes.map((anime, index) => (
           <div
             key={anime.id}
-            className={`transition-all duration-500 absolute bottom-10 w-full ${
+            className={`transition-all duration-700 absolute bottom-10 w-full ${
               index === currentIndex
                 ? "opacity-100 translate-x-0"
                 : index < currentIndex ||
@@ -89,13 +89,13 @@ const AnimeCarousel = ({ animes }: AnimeCarouselProps) => {
                 : anime.overview}
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-primary hover:bg-primary/80 text-white flex  items-center px-4 py-2 rounded-md transition duration-300 cursor-pointer">
+              <Button className="hover:bg-primary/60 text-white cursor-pointer">
                 {" "}
                 <Play className="h-4 w-4 mr-2" /> Watch Now{" "}
-              </button>
-              <button className="bg-primary hover:bg-primary/80 text-white flex  items-center px-4 py-2 rounded-md transition duration-300 cursor-pointer">
+              </Button>
+              <Button className="hover:bg-primary/60 text-white cursor-pointer">
                 <Plus className="h-4 w-4 mr-2" /> Add to Watchlist
-              </button>
+              </Button>
             </div>
           </div>
         ))}
@@ -105,22 +105,38 @@ const AnimeCarousel = ({ animes }: AnimeCarouselProps) => {
       <Button
         variant="ghost"
         size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-black/30 hover:bg-black/50 text-white"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-black/30 text-white group"
         onClick={prevSlide}
       >
-        <ChevronLeft className="h-6 w-6" />
+        <ChevronLeft className="h-6 w-6 group-hover:-translate-x-1 transition-all duration-300" />
         <span className="sr-only">Previous</span>
       </Button>
 
       <Button
         variant="ghost"
         size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-black/30 hover:bg-black/50 text-white"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-black/30 text-white group"
         onClick={nextSlide}
       >
-        <ChevronRight className="h-6 w-6" />
+        <ChevronRight className="h-6 w-6 group-hover:translate-x-1 transition-all duration-300" />
         <span className="sr-only">Next</span>
       </Button>
+
+      {/* Indicators */}
+      <div className="absolute bottom-10 right-4 -translate-x-1/2 z-30 flex gap-2">
+        {animes.map((_, index) => (
+          <button
+            key={index}
+            className={`h-2 rounded-full transition-all duration-700 ${
+              index === currentIndex
+                ? "w-8 bg-red-500"
+                : "w-2 bg-white/50 hover:bg-white/80"
+            }`}
+            onClick={() => goToSlide(index)}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };
