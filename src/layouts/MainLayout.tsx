@@ -6,7 +6,7 @@ const MainLayout = () => {
   return (
     <main className="h-screen flex">
       <Sidebar />
-      <div className="w-full h-full flex flex-col overflow-y-auto p-4 md:p-10">
+      <div className="inner-section w-full h-full flex flex-col overflow-y-auto px-4 md:px-10">
         <Outlet />
       </div>
       <RightSidebar />

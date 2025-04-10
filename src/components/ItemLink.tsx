@@ -12,7 +12,7 @@ const ItemLink = ({ name, path, Icon }: Props) => {
       <NavLink
         to={`${path}`}
         className={({ isActive }) =>
-          `flex items-center justify-center md:justify-start gap-3.5 cursor-pointer py-4 group before:content-[''] before:absolute before:w-1 before:h-[30px] before:bg-primary md:before:-right-10 before:-right-4  transition-all duration-300 ${
+          `flex items-center justify-center md:justify-start gap-3.5 cursor-pointer py-4 group before:content-[''] before:absolute before:w-1 before:h-[30px] before:bg-red-500 md:before:-right-10 before:-right-4 transition-all duration-300 ${
             isActive ? "before:opacity-100" : "before:opacity-0"
           }`
         }
@@ -22,15 +22,13 @@ const ItemLink = ({ name, path, Icon }: Props) => {
             <Icon
               className={`transition-colors duration-300 ${
                 isActive
-                  ? "text-primary"
-                  : "text-slate-400 group-hover:text-primary"
+                  ? "text-red-500"
+                  : "text-gray-400 group-hover:text-white"
               }`}
             />
             <span
               className={`font-semibold transition-colors duration-300 hidden md:inline  ${
-                isActive
-                  ? "text-neutral-950"
-                  : "text-slate-400 group-hover:text-neutral-950 "
+                isActive ? "text-white" : "text-gray-400 group-hover:text-white"
               }`}
             >
               {name}

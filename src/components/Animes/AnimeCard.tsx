@@ -51,7 +51,7 @@ const AnimeCard = ({ anime }: AnimeCardProps) => {
               <div className="flex gap-2 mt-1">
                 <Button
                   size="sm"
-                  className="flex-1 bg-primary hover:bg-primary/50 text-white"
+                  className="flex-1 bg-red-500 hover:bg-red-500/70 text-white"
                 >
                   <Play className="h-3.5 w-3.5 mr-1" /> Watch
                 </Button>
@@ -69,7 +69,9 @@ const AnimeCard = ({ anime }: AnimeCardProps) => {
       </a>
 
       <div className="p-2">
-        <h3 className="font-medium text-sm line-clamp-1">{anime.title}</h3>
+        <h3 className="font-medium text-sm line-clamp-1 text-white">
+          {anime.title}
+        </h3>
         <div className="flex items-center gap-1 text-xs text-gray-400">
           <img
             src="/mal-logo.jpg"

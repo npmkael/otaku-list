@@ -17,7 +17,7 @@ const FavoriteAnime = ({ title, genres, poster, rating }: Props) => {
       />
       <div className="flex flex-col justify-between">
         <div className="leading-4">
-          <h3 className="text-sm font-semibold">
+          <h3 className="text-sm font-semibold text-white">
             {title.length > 15 ? title.slice(0, 15) + "..." : title}
           </h3>
           <span className="text-xs text-gray-400">

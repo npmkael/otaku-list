@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 body {
-  background-color: #f6f8fe;
+  background-color: #000;
 }
 
 @theme {
@@ -128,4 +128,9 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.inner-section {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) #000;
 }

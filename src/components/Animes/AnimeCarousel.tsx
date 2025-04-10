@@ -50,7 +50,7 @@ const AnimeCarousel = ({ animes }: AnimeCarouselProps) => {
   const currentAnime = animes[currentIndex];
 
   return (
-    <div className="relative h-[70vh] bg-gradient-to-b from-black/20 to-black rounded-2xl overflow-hidden">
+    <div className="relative h-[70vh] bg-gradient-to-b from-black/20 to-black rounded-tl-2xl rounded-tr-2xl overflow-hidden">
       {animes.map((anime, index) => (
         <div
           key={anime.id}
@@ -89,7 +89,7 @@ const AnimeCarousel = ({ animes }: AnimeCarouselProps) => {
                 : anime.overview}
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="hover:bg-primary/60 text-white cursor-pointer">
+              <Button className="hover:bg-red-500/80 bg-red-500 text-white cursor-pointer">
                 {" "}
                 <Play className="h-4 w-4 mr-2" /> Watch Now{" "}
               </Button>
