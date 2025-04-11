@@ -1,4 +1,4 @@
-import type { Anime } from "../types/index";
+import type { Anime, Character } from "../types/index";
 
 // Sample anime data
 const animes: Anime[] = [
@@ -179,6 +179,143 @@ export const newReleases = [
   animes[7],
   animes[2],
 ];
+
+const characters: Character[] = [
+  {
+    id: "1",
+    name: "Eren Yeager",
+    animeFrom: "Attack on Titan",
+    animeId: "1",
+    voiceActor: "Yuki Kaji",
+    role: "Protagonist",
+    description:
+      "A young man who swears vengeance on the Titans after they destroy his hometown and kill his mother. Later discovers he has the ability to transform into a Titan.",
+    imageUrl: "/characters/eren-jaeger.webp",
+  },
+  {
+    id: "2",
+    name: "Mikasa Ackerman",
+    animeFrom: "Attack on Titan",
+    animeId: "1",
+    voiceActor: "Yui Ishikawa",
+    role: "Main Character",
+    description:
+      "Eren's adoptive sister and one of the most skilled soldiers. She is extremely protective of Eren and has exceptional combat abilities.",
+    imageUrl: "/characters/mikasa-ackerman.webp",
+  },
+  {
+    id: "3",
+    name: "Tanjiro Kamado",
+    animeFrom: "Demon Slayer",
+    animeId: "2",
+    voiceActor: "Natsuki Hanae",
+    role: "Protagonist",
+    description:
+      "A kind-hearted young man who becomes a demon slayer after his family is slaughtered and his sister Nezuko is turned into a demon.",
+    imageUrl: "/characters/tanjiro.webp",
+  },
+  {
+    id: "4",
+    name: "Nezuko Kamado",
+    animeFrom: "Demon Slayer",
+    animeId: "2",
+    voiceActor: "Akari Kitō",
+    role: "Main Character",
+    description:
+      "Tanjiro's younger sister who was turned into a demon but still retains some human emotions and thoughts. She travels with Tanjiro in a special box during the day.",
+    imageUrl: "/characters/nezuko.jpg",
+  },
+  {
+    id: "5",
+    name: "Izuku Midoriya",
+    animeFrom: "My Hero Academia",
+    animeId: "3",
+    voiceActor: "Daiki Yamashita",
+    role: "Protagonist",
+    description:
+      "A boy born without a Quirk in a world where most people have superpowers. After meeting his idol All Might, he inherits his Quirk and enters U.A. High School to become a hero.",
+    imageUrl: "/characters/izuku-midoriya.webp",
+  },
+  {
+    id: "6",
+    name: "Katsuki Bakugo",
+    animeFrom: "My Hero Academia",
+    animeId: "3",
+    voiceActor: "Nobuhiko Okamoto",
+    role: "Deuteragonist",
+    description:
+      "Izuku's childhood friend and rival with an explosive personality to match his Quirk. Despite his aggressive nature, he aims to become the number one hero.",
+    imageUrl: "/characters/katsuki-bakugo.jpg",
+  },
+  {
+    id: "7",
+    name: "Yuji Itadori",
+    animeFrom: "Jujutsu Kaisen",
+    animeId: "4",
+    voiceActor: "Junya Enoki",
+    role: "Protagonist",
+    description:
+      "A high school student with impressive physical abilities who joins the Occult Research Club for fun. After swallowing a cursed object, he becomes the host of Sukuna, the King of Curses.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Yuji Itadori",
+  },
+  {
+    id: "8",
+    name: "Megumi Fushiguro",
+    animeFrom: "Jujutsu Kaisen",
+    animeId: "4",
+    voiceActor: "Yuma Uchida",
+    role: "Main Character",
+    description:
+      "A serious and strong-willed jujutsu sorcerer who can summon various shikigami (familiars) using his shadow technique. He's the one who first encounters Yuji.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Megumi Fushiguro",
+  },
+  {
+    id: "9",
+    name: "Edward Elric",
+    animeFrom: "Fullmetal Alchemist: Brotherhood",
+    animeId: "5",
+    voiceActor: "Romi Park",
+    role: "Protagonist",
+    description:
+      "A young alchemical prodigy who lost his arm and leg in a failed human transmutation attempt to revive his mother. He becomes a State Alchemist to find the Philosopher's Stone.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Edward Elric",
+  },
+  {
+    id: "10",
+    name: "Alphonse Elric",
+    animeFrom: "Fullmetal Alchemist: Brotherhood",
+    animeId: "5",
+    voiceActor: "Rie Kugimiya",
+    role: "Deuteragonist",
+    description:
+      "Edward's younger brother whose entire body was lost in the failed transmutation. His soul is bound to a suit of armor, and he travels with Edward to find a way to restore their bodies.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Alphonse Elric",
+  },
+  {
+    id: "11",
+    name: "Monkey D. Luffy",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Mayumi Tanaka",
+    role: "Protagonist",
+    description:
+      "A cheerful young man whose body gained the properties of rubber after unintentionally eating a Devil Fruit. His dream is to find the One Piece treasure and become the Pirate King.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Monkey D. Luffy",
+  },
+  {
+    id: "12",
+    name: "Anya Forger",
+    animeFrom: "Spy x Family",
+    animeId: "7",
+    voiceActor: "Atsumi Tanezaki",
+    role: "Main Character",
+    description:
+      "A telepathic young girl adopted by Loid Forger as part of his cover. She's aware of both her adoptive parents' secret identities but keeps this knowledge to herself.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Anya Forger",
+  },
+];
+
+export const popularCharacters = characters.slice(0, 6);
 
 // Helper functions
 export function getAnimeById(id: string): Anime | undefined {

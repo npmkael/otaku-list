@@ -13,3 +13,14 @@ export interface Anime {
   posterUrl?: string;
   backdropUrl?: string;
 }
+
+export interface Character {
+  id: string;
+  name: string;
+  animeFrom: string;
+  animeId: string;
+  voiceActor: string;
+  role: string;
+  description: string;
+  imageUrl?: string;
+}

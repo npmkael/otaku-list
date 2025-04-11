@@ -4,9 +4,11 @@ import {
   featuredAnimes,
   newReleases,
   popularAnimes,
+  popularCharacters,
 } from "../../lib/anime-data";
-import { Search } from "lucide-react";
+import { ChevronRight, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import CharacterCard from "@/components/CharacterCard";
 
 const Animes = () => {
   return (
@@ -30,7 +32,14 @@ const Animes = () => {
       {/* Featured Anime */}
       <section className="py-10">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-white">Featured Anime</h2>
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-2xl font-bold  text-white">Featured Anime</h2>
+
+            <span className="text-sm text-white flex items-center gap-1 group">
+              See all
+              <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-all duration-300" />
+            </span>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {featuredAnimes.map((anime) => (
               <AnimeCard key={anime.id} anime={anime} />
@@ -42,7 +51,14 @@ const Animes = () => {
       {/* Popular Animes */}
       <section className="py-10">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-white">Popular Anime</h2>
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-2xl font-bold  text-white">Popular Anime</h2>
+
+            <span className="text-sm text-white flex items-center gap-1 group">
+              See all
+              <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-all duration-300" />
+            </span>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {popularAnimes.map((anime) => (
               <AnimeCard key={anime.id} anime={anime} />
@@ -58,6 +74,26 @@ const Animes = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {newReleases.map((anime) => (
               <AnimeCard key={anime.id} anime={anime} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Characters */}
+      <section className="py-10">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-2xl font-bold text-white">
+              Popular Characters
+            </h2>
+            <span className="text-sm text-white flex items-center gap-1 group">
+              View All Characters
+              <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-all duration-300" />
+            </span>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+            {popularCharacters.map((character) => (
+              <CharacterCard key={character.id} character={character} />
             ))}
           </div>
         </div>
