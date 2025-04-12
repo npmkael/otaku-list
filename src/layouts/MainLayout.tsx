@@ -9,7 +9,6 @@ const MainLayout = () => {
       <div className="inner-section w-full h-full flex flex-col overflow-y-auto px-4 md:px-10">
         <Outlet />
       </div>
-      <RightSidebar />
     </main>
   );
 };
