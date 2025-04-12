@@ -1,11 +1,11 @@
 import AnimeCard from "@/components/Animes/AnimeCard";
-import AnimeCarousel from "../../components/Animes/AnimeCarousel";
+import AnimeCarousel from "../../../components/Animes/AnimeCarousel";
 import {
   featuredAnimes,
   newReleases,
   popularAnimes,
   popularCharacters,
-} from "../../lib/anime-data";
+} from "../../../lib/anime-data";
 import { ChevronRight, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import CharacterCard from "@/components/CharacterCard";
