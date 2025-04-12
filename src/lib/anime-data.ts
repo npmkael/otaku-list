@@ -15,8 +15,8 @@ const animes: Anime[] = [
     studio: "MAPPA",
     season: "Fall 2024",
     voiceActors: ["Yuki Kaji", "Yui Ishikawa", "Marina Inoue"],
-    posterUrl: "/solo-leveling-banner-sample.webp",
-    backdropUrl: "/solo-leveling-poster.jpg",
+    posterUrl: "/banners/solo-leveling-banner-sample.webp",
+    backdropUrl: "/poster/solo-leveling-poster.jpg",
   },
   {
     id: "2",
@@ -31,8 +31,8 @@ const animes: Anime[] = [
     studio: "ufotable",
     season: "Spring 2019",
     voiceActors: ["Natsuki Hanae", "Akari Kitō", "Hiro Shimono"],
-    posterUrl: "/apothecary-poster-banner.jpg",
-    backdropUrl: "/apothecary-poster.webp",
+    posterUrl: "/banners/apothecary-poster-banner.jpg",
+    backdropUrl: "/poster/apothecary-poster.webp",
   },
   {
     id: "3",
@@ -47,8 +47,8 @@ const animes: Anime[] = [
     studio: "Bones",
     season: "Spring 2016",
     voiceActors: ["Daiki Yamashita", "Kenta Miyake", "Nobuhiko Okamoto"],
-    posterUrl: "/hero-academia-poster.webp",
-    backdropUrl: "/hero-academia-poster.webp",
+    posterUrl: "/poster/hero-academia-poster.webp",
+    backdropUrl: "/poster/hero-academia-poster.webp",
   },
   {
     id: "4",
@@ -63,8 +63,8 @@ const animes: Anime[] = [
     studio: "MAPPA",
     season: "Fall 2020",
     voiceActors: ["Junya Enoki", "Yuma Uchida", "Asami Seto"],
-    posterUrl: "/jujutsu-kaisen-banner.jpg",
-    backdropUrl: "/jjk-poster.webp",
+    posterUrl: "/banners/jujutsu-kaisen-banner.jpg",
+    backdropUrl: "/poster/jjk-poster.webp",
   },
   {
     id: "5",
@@ -79,8 +79,8 @@ const animes: Anime[] = [
     studio: "Toei Animation",
     season: "Fall 1999",
     voiceActors: ["Mayumi Tanaka", "Kazuya Nakai", "Akemi Okamura"],
-    posterUrl: "/one-piece-banner-poster.webp",
-    backdropUrl: "/one-piece-poster.jpg",
+    posterUrl: "/banners/one-piece-banner-poster.webp",
+    backdropUrl: "/poster/one-piece-poster.jpg",
   },
   {
     id: "6",
@@ -95,8 +95,8 @@ const animes: Anime[] = [
     studio: "Bones",
     season: "Spring 2009",
     voiceActors: ["Romi Park", "Rie Kugimiya", "Shinichiro Miki"],
-    posterUrl: "/fullmetal-alchemist.jpg",
-    backdropUrl: "/fullmetal-alchemist.jpg",
+    posterUrl: "/poster/fullmetal-alchemist.jpg",
+    backdropUrl: "/poster/fullmetal-alchemist.jpg",
   },
   {
     id: "7",
@@ -112,7 +112,7 @@ const animes: Anime[] = [
     season: "Spring 2022",
     voiceActors: ["Takuya Eguchi", "Atsumi Tanezaki", "Saori Hayami"],
     posterUrl: "/placeholder.svg?height=450&width=300&text=Spy x Family",
-    backdropUrl: "/spyfamily-poster.jpg",
+    backdropUrl: "/poster/spyfamily-poster.jpg",
   },
   {
     id: "8",
@@ -127,7 +127,7 @@ const animes: Anime[] = [
     studio: "MAPPA",
     season: "Fall 2022",
     voiceActors: ["/chainsawman.jpg"],
-    backdropUrl: "/chainsawman.jpg",
+    backdropUrl: "/poster/chainsawman.jpg",
   },
   {
     id: "9",
@@ -143,7 +143,7 @@ const animes: Anime[] = [
     season: "Fall 2006",
     voiceActors: ["Mamoru Miyano", "Kappei Yamaguchi", "Shido Nakamura"],
     posterUrl: "/placeholder.svg?height=450&width=300&text=Death Note",
-    backdropUrl: "/death-note.jpg",
+    backdropUrl: "/poster/death-note.jpg",
   },
   {
     id: "10",
@@ -159,7 +159,7 @@ const animes: Anime[] = [
     season: "Winter 2018",
     voiceActors: ["Yui Ishikawa", "Daisuke Namikawa", "Takehito Koyasu"],
     posterUrl: "/placeholder.svg?height=450&width=300&text=Violet Evergarden",
-    backdropUrl: "/violet-evergarden.jpg",
+    backdropUrl: "/poster/violet-evergarden.jpg",
   },
 ];
 
