@@ -3,8 +3,8 @@ import { NavLink, Outlet } from "react-router-dom";
 const Discover = () => {
   return (
     <section className="">
-      <div className="flex flex-col gap-2.5 mt-5">
-        <div className="flex gap-4">
+      <div className="flex flex-col gap-2.5">
+        <div className="flex gap-4 mx-5 mt-5">
           {/* Active state for now */}
           <NavLink
             to={"/discover/animes"}

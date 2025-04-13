@@ -50,7 +50,7 @@ const AnimeCarousel = ({ animes }: AnimeCarouselProps) => {
   const currentAnime = animes[currentIndex];
 
   return (
-    <div className="relative h-[70vh] bg-gradient-to-b from-black/20 to-black rounded-tl-2xl rounded-tr-2xl overflow-hidden">
+    <div className="relative h-[70vh] bg-gradient-to-b from-black/20 to-black overflow-hidden">
       {animes.map((anime, index) => (
         <div
           key={anime.id}

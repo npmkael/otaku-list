@@ -2,6 +2,7 @@ import { Play, Plus, Star } from "lucide-react";
 import { useParams } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 
 const AnimeDetails = () => {
   const { id } = useParams();
@@ -110,6 +111,23 @@ const AnimeDetails = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Tabs Section */}
+        <div className="container mx-auto px-4 py-10">
+          <Tabs defaultValue="characters" className="w-full">
+            <TabsList className="grid w-full md:w-auto grid-cols-3 h-auto bg-gray-900">
+              <TabsTrigger value="characters" className="py-3">
+                Characters
+              </TabsTrigger>
+              <TabsTrigger value="episdoes" className="py-3">
+                Episodes
+              </TabsTrigger>
+              <TabsTrigger value="similar" className="py-3">
+                Similar Anime
+              </TabsTrigger>
+            </TabsList>
+          </Tabs>
         </div>
       </div>
     </div>
