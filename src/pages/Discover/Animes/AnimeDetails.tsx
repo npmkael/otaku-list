@@ -2,7 +2,7 @@ import { Play, Plus, Star } from "lucide-react";
 import { useParams } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
+import { TabsContent, Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const AnimeDetails = () => {
   const { id } = useParams();
@@ -120,13 +120,25 @@ const AnimeDetails = () => {
               <TabsTrigger value="characters" className="py-3">
                 Characters
               </TabsTrigger>
-              <TabsTrigger value="episdoes" className="py-3">
+              <TabsTrigger value="episodes" className="py-3">
                 Episodes
               </TabsTrigger>
               <TabsTrigger value="similar" className="py-3">
                 Similar Anime
               </TabsTrigger>
             </TabsList>
+
+            <TabsContent value="characters" className="pt-6">
+              <span>Characters</span>
+            </TabsContent>
+
+            <TabsContent value="episodes" className="pt-6">
+              <span>Episodes</span>
+            </TabsContent>
+
+            <TabsContent value="similar" className="pt-6">
+              <span>Similar</span>
+            </TabsContent>
           </Tabs>
         </div>
       </div>

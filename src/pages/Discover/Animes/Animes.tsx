@@ -12,7 +12,7 @@ import CharacterCard from "@/components/CharacterCard";
 
 const Animes = () => {
   return (
-    <div className="animes font-inter mt-5">
+    <div className="animes font-inter">
       {/* Featured Anime Carousel */}
       <AnimeCarousel animes={featuredAnimes} />
 
