@@ -123,7 +123,7 @@ const AnimeCarousel = ({ animes }: AnimeCarouselProps) => {
       </Button>
 
       {/* Indicators */}
-      <div className="absolute bottom-10 right-4 -translate-x-1/2 z-30 flex gap-2">
+      <div className="absolute bottom-10 right-45 -translate-x-1/2 z-30 flex gap-2">
         {animes.map((_, index) => (
           <button
             key={index}

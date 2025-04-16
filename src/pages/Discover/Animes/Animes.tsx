@@ -17,7 +17,7 @@ const Animes = () => {
       <AnimeCarousel animes={featuredAnimes} />
 
       {/* Search Bar */}
-      <div className="bg-black py-6 sticky top-0 z-30">
+      <div className="bg-black py-6 relative top-0 z-30">
         <div className="container mx-auto px-4">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
