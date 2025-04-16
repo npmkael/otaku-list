@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Anime } from "../../types";
+import { Anime } from "../types";
 import { ChevronLeft, ChevronRight, Play, Plus } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 
 type AnimeCarouselProps = {
   animes: Anime[];
@@ -123,7 +123,7 @@ const AnimeCarousel = ({ animes }: AnimeCarouselProps) => {
       </Button>
 
       {/* Indicators */}
-      <div className="absolute bottom-10 right-45 -translate-x-1/2 z-30 flex gap-2">
+      <div className="absolute bottom-10 right-0 -translate-x-1/2 z-30 hidden gap-2 md:flex">
         {animes.map((_, index) => (
           <button
             key={index}

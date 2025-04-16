@@ -10,6 +10,7 @@ body {
 @theme {
   --font-inter: "Inter", sans-seirf;
   --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 
   --color-primary: #876c57;
 }
