@@ -57,7 +57,7 @@ const AnimeCard = ({ anime }: AnimeCardProps) => {
                 </Button>
                 <Button
                   size="sm"
-                  variant="outline"
+                  variant="default"
                   className="p-0 text-black hover:bg-white/80 "
                 >
                   <Plus className="h-4 w-4" />

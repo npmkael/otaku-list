@@ -93,7 +93,7 @@ const AnimeCarousel = ({ animes }: AnimeCarouselProps) => {
                 {" "}
                 <Play className="h-4 w-4 mr-2" /> Watch Now{" "}
               </Button>
-              <Button className="hover:bg-primary/60 text-white cursor-pointer">
+              <Button className="hover:bg-primary/60 text-black cursor-pointer">
                 <Plus className="h-4 w-4 mr-2" /> Add to Watchlist
               </Button>
             </div>
