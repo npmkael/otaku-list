@@ -31,7 +31,7 @@ const Navbar = () => {
               Animes
             </Link>
             <Link
-              to="/manga"
+              to="/mangas"
               className="text-md text-white hover:text-red-500 transition-colors uppercase font-poppins "
             >
               Manga

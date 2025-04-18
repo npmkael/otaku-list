@@ -9,13 +9,6 @@ const AnimeDetails = () => {
 
   return (
     <div className="relative min-h-[70vh]">
-      <div
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{
-          backgroundImage: "url(/banners/one-piece-banner-poster.webp",
-        }}
-      />
-
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10" />
 
