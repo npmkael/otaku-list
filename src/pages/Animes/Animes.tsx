@@ -263,7 +263,20 @@ const Animes = () => {
               </div>
               <div>
                 <h3 className="text-sm font-medium mb-2">Status</h3>
-                <div className="flex flex-wrap gap-2"></div>
+                <div className="flex flex-wrap gap-2">
+                  <Badge
+                    variant="outline"
+                    className="cursor-pointer hover:bg-red-500/50 border-gray-700"
+                  >
+                    Ongoing
+                  </Badge>
+                  <Badge
+                    variant="outline"
+                    className="cursor-pointer hover:bg-red-500/50 border-gray-700"
+                  >
+                    Completed
+                  </Badge>
+                </div>
               </div>
             </div>
           )}
