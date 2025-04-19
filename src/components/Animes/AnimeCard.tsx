@@ -49,17 +49,10 @@ const AnimeCard = ({ anime }: AnimeCardProps) => {
               </div>
 
               <div className="flex gap-2 mt-1">
-                <Button
-                  size="sm"
-                  className="flex-1 bg-red-500 hover:bg-red-500/70 text-white"
-                >
+                <Button className="flex-1 bg-red-500 hover:bg-red-500/70 text-white">
                   <Play className="h-3.5 w-3.5 mr-1" /> Watch
                 </Button>
-                <Button
-                  size="sm"
-                  variant="default"
-                  className="p-0 text-black hover:bg-white/80 "
-                >
+                <Button className=" text-black hover:bg-white/80 ">
                   <Plus className="h-4 w-4" />
                 </Button>
               </div>
