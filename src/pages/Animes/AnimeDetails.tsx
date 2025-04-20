@@ -11,16 +11,16 @@ const AnimeDetails = () => {
 
   return (
     <div className="min-h-screen bg-black">
-      <div className="relative min-h-[70vh]">
-        <div
-          className="absolute inset-0 bg-cover bg-center z-0"
-          style={{
-            backgroundImage: "url(/banners/one-piece-banner-poster.webp",
-          }}
-        />
-
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10" />
+      <div className="relative min-h-[60vh]">
+        <div className=" absolute inset-0 z-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center z-0"
+            style={{
+              backgroundImage: "url(/banners/one-piece-banner-poster.webp",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+        </div>
 
         <div className="relative z-20 container mx-auto px-4 pt-10">
           {/* Some link */}
@@ -114,43 +114,43 @@ const AnimeDetails = () => {
               </div>
             </div>
           </div>
-
-          {/* Tabs Section */}
-          <div className="container mx-auto px-4 py-10">
-            <Tabs defaultValue="characters" className="w-full">
-              <TabsList className="grid w-full md:w-auto grid-cols-3 h-auto bg-gray-900">
-                <TabsTrigger value="characters" className="py-3">
-                  Characters
-                </TabsTrigger>
-                <TabsTrigger value="episodes" className="py-3">
-                  Episodes
-                </TabsTrigger>
-                <TabsTrigger value="similar" className="py-3">
-                  Similar Anime
-                </TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="characters" className="pt-6">
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
-                  {
-                    /* Mock data for characters */
-                    onePieceCharacters.map((character) => (
-                      <CharacterCard key={character.id} character={character} />
-                    ))
-                  }
-                </div>
-              </TabsContent>
-
-              <TabsContent value="episodes" className="pt-6">
-                <span>Episodes</span>
-              </TabsContent>
-
-              <TabsContent value="similar" className="pt-6">
-                <span>Similar</span>
-              </TabsContent>
-            </Tabs>
-          </div>
         </div>
+      </div>
+
+      {/* Tabs Section */}
+      <div className="container mx-auto px-4 py-10">
+        <Tabs defaultValue="characters" className="w-full">
+          <TabsList className="grid w-full md:w-auto grid-cols-3 h-auto bg-gray-900">
+            <TabsTrigger value="characters" className="py-3">
+              Characters
+            </TabsTrigger>
+            <TabsTrigger value="episodes" className="py-3">
+              Episodes
+            </TabsTrigger>
+            <TabsTrigger value="similar" className="py-3">
+              Similar Anime
+            </TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="characters" className="pt-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+              {
+                /* Mock data for characters */
+                onePieceCharacters.map((character) => (
+                  <CharacterCard key={character.id} character={character} />
+                ))
+              }
+            </div>
+          </TabsContent>
+
+          <TabsContent value="episodes" className="pt-6">
+            <span>Episodes</span>
+          </TabsContent>
+
+          <TabsContent value="similar" className="pt-6">
+            <span>Similar</span>
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );
