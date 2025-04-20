@@ -315,6 +315,119 @@ const characters: Character[] = [
   },
 ];
 
+export const onePieceCharacters = [
+  {
+    id: "1",
+    name: "Monkey D. Luffy",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Mayumi Tanaka",
+    role: "Protagonist",
+    description:
+      "A cheerful young man whose body gained the properties of rubber after unintentionally eating a Devil Fruit. His dream is to find the One Piece treasure and become the Pirate King.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Monkey D. Luffy",
+  },
+  {
+    id: "2",
+    name: "Roronoa Zoro",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Kazuya Nakai",
+    role: "Swordsman",
+    description:
+      "A master swordsman who uses a unique three-sword style. He dreams of becoming the world's greatest swordsman.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Roronoa Zoro",
+  },
+  {
+    id: "3",
+    name: "Nami",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Akemi Okamura",
+    role: "Navigator",
+    description:
+      "A clever and brave navigator with a deep love for maps and money. She dreams of drawing a complete map of the world.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Nami",
+  },
+  {
+    id: "4",
+    name: "Usopp",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Kappei Yamaguchi",
+    role: "Sniper",
+    description:
+      "A creative and comedic sharpshooter who aspires to become a brave warrior of the sea.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Usopp",
+  },
+  {
+    id: "5",
+    name: "Sanji",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Hiroaki Hirata",
+    role: "Cook",
+    description:
+      "A chivalrous chef who specializes in kicking-based combat. He dreams of finding the All Blue, a legendary sea.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Sanji",
+  },
+  {
+    id: "6",
+    name: "Tony Tony Chopper",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Ikue Ōtani",
+    role: "Doctor",
+    description:
+      "A blue-nosed reindeer who ate the Human-Human Fruit. He's the crew's doctor and dreams of curing any disease.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Chopper",
+  },
+  {
+    id: "7",
+    name: "Nico Robin",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Yuriko Yamaguchi",
+    role: "Archaeologist",
+    description:
+      "A calm and intelligent archaeologist who can sprout body parts using the powers of the Flower-Flower Fruit. She seeks the True History.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Nico Robin",
+  },
+  {
+    id: "8",
+    name: "Franky",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Kazuki Yao",
+    role: "Shipwright",
+    description:
+      "A cyborg shipwright with a loud personality. He built the crew's ship, the Thousand Sunny.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Franky",
+  },
+  {
+    id: "9",
+    name: "Brook",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Chō",
+    role: "Musician",
+    description:
+      "An animated skeleton revived by the Revive-Revive Fruit. He's the crew's musician and skilled swordsman.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Brook",
+  },
+  {
+    id: "10",
+    name: "Jinbe",
+    animeFrom: "One Piece",
+    animeId: "6",
+    voiceActor: "Katsuhisa Hōki",
+    role: "Helmsman",
+    description:
+      "A former Warlord of the Sea and a fish-man karate master. Jinbe serves as the crew's helmsman.",
+    imageUrl: "/placeholder.svg?height=400&width=300&text=Jinbe",
+  },
+];
+
 export const popularCharacters = characters.slice(0, 6);
 
 // Helper functions

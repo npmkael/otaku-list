@@ -6,7 +6,7 @@ const MainLayout = () => {
   return (
     <main>
       <Navbar />
-      <div className="inner-section w-full h-full flex flex-col ">
+      <div className="inner-section ">
         <Outlet />
       </div>
     </main>
