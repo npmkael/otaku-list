@@ -139,3 +139,14 @@ export const genres = [
     animeCount: 124,
   },
 ];
+
+// Filter options
+export const filterOptions = [
+  { label: "All Anime", value: "all" },
+  { label: "Trending", value: "trending" },
+  { label: "Popular", value: "popular" },
+  { label: "New Releases", value: "new" },
+  ...genres
+    .slice(0, 6)
+    .map((genre) => ({ label: genre.name, value: genre.name })),
+];
