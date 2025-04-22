@@ -24,3 +24,22 @@ export interface Character {
   description: string;
   imageUrl?: string;
 }
+
+export interface Manga {
+  id: string;
+  title: string;
+  year: number;
+  rating: number;
+  volumes: number;
+  chapters: number;
+  status: string;
+  genres: string[];
+  overview: string;
+  author: string;
+  publisher: string;
+  coverUrl?: string;
+  bannerUrl?: string;
+  isAdult: boolean;
+  hasAnime: boolean;
+  animeId?: string;
+}

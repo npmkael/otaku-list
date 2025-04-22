@@ -117,73 +117,17 @@ const Animes = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center">
-        <div className=" absolute inset-0 z-0">
-          <div
-            className="absolute inset-0 bg-cover bg-center z-0"
-            style={{
-              backgroundImage: "url(/banners/solo-leveling-banner-sample.webp",
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+      <div className="bg-gradient-to-b from-red-500/30 to-black py-16">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Anime Collection
+          </h1>
+          <p className="text-lg text-gray-300 max-w-2xl">
+            Browse our extensive collection of anime series across different
+            genres, seasons, and studios.
+          </p>
         </div>
-
-        <div className="container mx-auto px-4 relative z-10 py-16">
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="w-full md:w-1/2 lg:w-3/5">
-              <Badge className="bg-red-500 text-white mb-4">
-                Featured Anime
-              </Badge>
-              <h1 className="text-3xl md:text-6xl font-bold mb-4">
-                Solo Leveling
-              </h1>
-              <div className="flex items-center gap-4 mb-4 text-sm">
-                <span className="flex items-center gap-1">
-                  <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
-                  8/10
-                </span>
-                <span>•</span>
-                <span>2025</span>
-                <span>•</span>
-                <span>24 Episodes</span>
-              </div>
-              <p className="text-gray-300 mb-6 max-w-2xl">
-                In a world where hunters — human warriors who possess
-                supernatural abilities — must battle deadly monsters to protect
-                all mankind from certain annihilation, a notoriously weak hunter
-                named Sung Jin-woo finds himself in a seemingly endless struggle
-                for survival.
-              </p>
-              <div className="flex flex-wrap gap-3 mb-6">
-                <Badge variant="outline" className="border-gray-700">
-                  Adventure
-                </Badge>
-                <Badge variant="outline" className="border-gray-700">
-                  Fantasy
-                </Badge>
-                <Badge variant="outline" className="border-gray-700">
-                  Action
-                </Badge>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <Button className="bg-red-500 hover:bg-red-600 text-white">
-                  <a href="/animes/1">View Details</a>
-                </Button>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-2/5 flex justify-center md:justify-end">
-              <div className="relative w-64 h-96 shadow-2xl transform md:translate-y-5">
-                <img
-                  src="/poster/solo-leveling-poster.jpg"
-                  className="object-cover rounded-lg h-full"
-                  height={450}
-                  width={300}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
 
       {/* Search bar */}
       <div
